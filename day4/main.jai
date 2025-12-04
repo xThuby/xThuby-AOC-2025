@@ -36,7 +36,7 @@ solution_a :: (input: string) -> int {
     init(*grid, grid_width, grid_height);
     defer deinit(*grid);
 
-    print("%, %\n", grid_width, grid_height);
+    // print("%, %\n", grid_width, grid_height);
 
     x: int;
     y: int;
@@ -87,7 +87,7 @@ solution_b :: (input: string) -> int {
     init(*grid, grid_width, grid_height);
     defer deinit(*grid);
 
-    print("%, %\n", grid_width, grid_height);
+    // print("%, %\n", grid_width, grid_height);
 
     x: int;
     y: int;

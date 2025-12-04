@@ -8,7 +8,7 @@ Profiler :: struct {
 
 SolutionProc :: #type (input: string) -> int;
 
-time_solution_warmup :: (identifier: string, proc: SolutionProc, input: string, count: int = 10) {
+time_solution_warmup :: (identifier: string, proc: SolutionProc, input: string, count: int = 20) {
     print("Running % % times.\n", identifier, count);
     profile_start(identifier);
     for 1..count {
