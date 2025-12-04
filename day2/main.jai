@@ -7,6 +7,8 @@
 #import "Math";
 #import "Hash_Table";
 
+#load "../timing.jai";
+
 main :: () {
     file_data, success := read_entire_file("input.txt");
     if !success {
@@ -17,9 +19,9 @@ main :: () {
     print("input.txt has % bytes.\n", file_data.count);
 
     print("------------------\n");
-    print("Solution A: %\n", solution_a(file_data));
+    time_solution("Solution A", solution_a, file_data);
     print("------------------\n");
-    print("Solution B: %\n", solution_b(file_data));
+    time_solution("Solution B", solution_b, file_data);
 
     free(file_data.data);
 }
