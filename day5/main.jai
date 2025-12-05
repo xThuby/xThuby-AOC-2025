@@ -23,6 +23,7 @@ main :: () {
     time_solution_warmup("Solution A", solution_a, file_data, 20);
     time_solution_warmup("Solution A", solution_a, file_data, 200);
     time_solution_warmup("Solution A", solution_a, file_data, 2000);
+    time_solution_warmup("Solution A", solution_a, file_data, 20000);
     time_solution_warmup("Solution A", solution_a, file_data, 200000);
     print("------------------\n");
     time_solution_warmup("Solution B", solution_b, file_data, 20);
